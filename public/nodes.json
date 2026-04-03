@@ -1,0 +1,410 @@
+{
+  "characters": [
+    {
+      "id": "ko",
+      "name": "柯文哲",
+      "role": "臺北市第6、7屆市長、民眾黨主席",
+      "description": "案件核心人物。檢察官指控他收受賄賂210萬元、侵占政治獻金逾6千萬元、挪用基金會公款827萬元。",
+      "search_query": "柯文哲市長收賄圖利政治獻金",
+      "connected_events": [
+        "meeting_20200220",
+        "bento_20200310",
+        "210wan",
+        "1500wan",
+        "kp_fund"
+      ],
+      "connected_characters": [
+        "shen",
+        "lee_wenzong",
+        "peng",
+        "huang",
+        "shao"
+      ]
+    },
+    {
+      "id": "shen",
+      "name": "沈慶京",
+      "role": "威京集團主席",
+      "description": "京華城開發商。為取得違法容積獎勵，行賄柯文哲210萬元、應曉薇5250萬元。",
+      "search_query": "沈慶京威京集團京華城容積行賄",
+      "connected_events": [
+        "meeting_20200220",
+        "210wan",
+        "jinghuacheng_permit"
+      ],
+      "connected_characters": [
+        "ko",
+        "ying",
+        "peng",
+        "huang"
+      ]
+    },
+    {
+      "id": "ying",
+      "name": "應曉薇",
+      "role": "臺北市議員（中正萬華）",
+      "description": "收受沈慶京賄賂5250萬元，長期以議員身分施壓北市府公務員，協助京華城取得違法容積。",
+      "search_query": "應曉薇議員收賄施壓協會洗錢",
+      "connected_events": [
+        "meeting_20200218",
+        "5250wan",
+        "wash_money"
+      ],
+      "connected_characters": [
+        "shen",
+        "ko",
+        "wu_shunmin"
+      ]
+    },
+    {
+      "id": "peng",
+      "name": "彭振聲",
+      "role": "臺北市副市長、都委會主任委員",
+      "description": "明知容積獎勵違法，仍在都委會主導通過，與柯文哲共同圖利京華城。",
+      "search_query": "彭振聲副市長都委會容積圖利",
+      "connected_events": [
+        "meeting_20200218",
+        "ducweihui_765",
+        "ducweihui_768"
+      ],
+      "connected_characters": [
+        "ko",
+        "shen",
+        "huang",
+        "shao"
+      ]
+    },
+    {
+      "id": "huang",
+      "name": "黃景茂",
+      "role": "臺北市都發局局長",
+      "description": "柯文哲親自面試任命。明知違法仍推動京華城容積案，壓制基層公務員依法行政的簽呈。",
+      "search_query": "黃景茂都發局局長簽呈容積",
+      "connected_events": [
+        "sign_rejected",
+        "ducweihui_765",
+        "jinghuacheng_permit"
+      ],
+      "connected_characters": [
+        "ko",
+        "peng",
+        "shao",
+        "zhang_yixuan"
+      ]
+    },
+    {
+      "id": "shao",
+      "name": "邵琇珮",
+      "role": "都發局總工程司",
+      "description": "因恐懼柯文哲的報復（林玄理案例在前），在專案小組會議中引導京華城走違法容積路徑。",
+      "search_query": "邵琇珮總工程司專案小組容積獎勵",
+      "connected_events": [
+        "ducweihui_765_special",
+        "jinghuacheng_permit"
+      ],
+      "connected_characters": [
+        "huang",
+        "peng"
+      ]
+    },
+    {
+      "id": "lee_wenzong",
+      "name": "李文宗",
+      "role": "柯文哲高中同學、臺北捷運公司董事長",
+      "description": "柯文哲的財務總管，負責調度所有政治資金。柯文哲期許他成為「小型版劉泰英」。",
+      "search_query": "李文宗財務木可公司眾望基金會劉泰英",
+      "connected_events": [
+        "210wan",
+        "kp_fund",
+        "wangwang_fund"
+      ],
+      "connected_characters": [
+        "ko",
+        "lee_wenjuan"
+      ]
+    },
+    {
+      "id": "wu_shunmin",
+      "name": "吳順民",
+      "role": "應曉薇議員助理、前都發局副總工程司",
+      "description": "退休後立刻去當應曉薇助理，利用都市計畫專業協助施壓北市府公務員。起訴但一審無罪。",
+      "search_query": "吳順民助理都發局退休施壓",
+      "connected_events": [
+        "meeting_20200218"
+      ],
+      "connected_characters": [
+        "ying"
+      ]
+    },
+    {
+      "id": "zhang_yixuan",
+      "name": "張懿萱（基層公務員）",
+      "role": "都發局都市規劃科承辦人",
+      "description": "三度上陳「不同意送都委會研議」的簽呈，三度遭退回。是這個案子裡試圖依法行政的代表人物。",
+      "search_query": "張懿萱簽呈退回依法行政",
+      "connected_events": [
+        "sign_rejected"
+      ],
+      "connected_characters": [
+        "huang",
+        "shao"
+      ]
+    },
+    {
+      "id": "xu",
+      "name": "徐春鶯",
+      "role": "臺灣○○○發展協會理事、陸配社群領袖",
+      "description": "中國大陸出身，民國87年入境取得台灣身分證。長期在陸配群體間極具影響力，受廈門民政局楊文濤及民革孫憲指示，介入111、113年選舉，違反反滲透法。另涉地下匯兌及詐貸，羈押中。"
+    },
+    {
+      "id": "zhong",
+      "name": "鍾錦明",
+      "role": "○○○○促進會會長",
+      "description": "與徐春鶯長期共同從事陸配婚姻家庭服務，接受楊文濤資源。在「死都瞑目」對話中明確說出「搞一個陸配大聯盟，那推法案就簡單了」，共同被訴違反反滲透法。"
+    },
+    {
+      "id": "yang_wentao",
+      "name": "楊文濤",
+      "role": "廈門民政局婚姻家庭服務中心主任",
+      "description": "中共民政部直屬組織代表，負有宣傳「兩岸一家親」、融合陸配家庭等任務，被認定為境外敵對勢力派遣之人。長期透過提供資源、明確指示介入台灣陸配政治活動，對鍾錦明說「那我死都瞑目了」。"
+    },
+    {
+      "id": "sun_xian",
+      "name": "孫憲",
+      "role": "民革上海市委員會祖國和平統一促進委員會副主任",
+      "description": "民革上海委員會統戰人員，長期蒐集分析台灣政治、選舉情報。以法律顧問名義掩飾身分隨協會活動接觸陸配群體，後被徐春鶯以偽造商務文件方式安排入境台灣。"
+    },
+    {
+      "id": "huang_shanshan",
+      "name": "黃珊珊",
+      "role": "前臺北市副市長、111年臺北市長候選人（民眾黨）",
+      "description": "111年臺北市長選舉候選人。徐春鶯、鍾錦明受楊文濤指示，動員陸配群體為其宣傳造勢。起訴書未追訴黃珊珊責任。"
+    }
+  ],
+  "events": [
+    {
+      "id": "meeting_20200218",
+      "date": "109年2月18日",
+      "title": "應曉薇帶沈慶京拜訪彭振聲",
+      "description": "應曉薇帶沈慶京從柯文哲市長室出來，手上拿著柯文哲辦公室常備的花生米，直接走向彭振聲副市長室，當場要求「幫忙、放水」。彭振聲拍桌說「這違法的事，我不會做」。",
+      "search_query": "應曉薇沈慶京拜訪彭振聲花生米放水",
+      "significance": "這個細節說明沈慶京剛從市長室出來，暗示柯文哲已經點頭。花生米是關鍵細節。",
+      "connected_characters": [
+        "ying",
+        "shen",
+        "peng",
+        "wu_shunmin"
+      ],
+      "connected_events": [
+        "meeting_20200220"
+      ]
+    },
+    {
+      "id": "meeting_20200220",
+      "date": "109年2月20日",
+      "title": "沈慶京與柯文哲密談一小時",
+      "description": "沈慶京單獨進入市長辦公室，朱亞虎在外等候。一小時後沈慶京出來，面露滿意微笑。檢察官認為這就是賄賂期約的達成時刻。",
+      "search_query": "沈慶京柯文哲市長室密談微笑期約",
+      "significance": "起訴書用「面露滿意微笑」作為默示合意的證據。法院是否採信這個推論是關鍵爭點。",
+      "connected_characters": [
+        "ko",
+        "shen"
+      ],
+      "connected_events": [
+        "bento_20200310",
+        "210wan"
+      ]
+    },
+    {
+      "id": "bento_20200310",
+      "date": "109年3月10日",
+      "title": "便當會：同一天兩個矛盾決定",
+      "description": "柯文哲同一天批示「速審速決」（表示由法院判決），卻又在便當會上裁示把京華城陳情案送都委會研議。兩個決定互相矛盾。",
+      "search_query": "柯文哲便當會速審速決都委會研議矛盾",
+      "significance": "檢察官用這個矛盾說明柯文哲在故意走兩條路，一條合法掩護、一條違法護航。",
+      "connected_characters": [
+        "ko",
+        "ying"
+      ],
+      "connected_events": [
+        "sign_rejected",
+        "210wan"
+      ]
+    },
+    {
+      "id": "sign_rejected",
+      "date": "109年2月至4月",
+      "title": "承辦人簽呈被退回三次",
+      "description": "承辦人張懿萱三度上陳「不同意送都委會研議」的簽呈，三度遭退回，最後被迫刪除反對意見才獲通過。",
+      "search_query": "張懿萱簽呈退回三次不同意研議",
+      "significance": "這段紀錄說明北市府基層公務員知道這件事違法，但被上級壓制。是本案最重要的行政違法證據之一。",
+      "connected_characters": [
+        "zhang_yixuan",
+        "huang",
+        "ko"
+      ],
+      "connected_events": [
+        "bento_20200310"
+      ]
+    },
+    {
+      "id": "210wan",
+      "date": "109年3月24至26日",
+      "title": "210萬用七個人頭匯入",
+      "description": "沈慶京指示張志澄找來7個威京員工，每人先從公司領30萬現金，再以「政治獻金」名義匯入民眾黨帳戶。朱亞虎事後傳訊給李文宗說「小沈十分小氣的捐了210萬」。",
+      "search_query": "210萬七人頭政治獻金朱亞虎李文宗小沈",
+      "significance": "這筆錢的操作方式揭示了行賄如何偽裝成合法捐款。朱亞虎的訊息是關鍵證據。",
+      "connected_characters": [
+        "shen",
+        "ko",
+        "lee_wenzong"
+      ],
+      "connected_events": [
+        "meeting_20200220",
+        "bento_20200310"
+      ]
+    },
+    {
+      "id": "1500wan",
+      "date": "112年11月1日（記錄日期）",
+      "title": "1500萬：Excel有記錄但法院不採信",
+      "description": "柯文哲硬碟裡的Excel記載「2022/11/1小沈1500沈慶京」，但法院認為這只是被告自白，沒有補強證據，所以這部分不成立。",
+      "search_query": "1500萬Excel硬碟小沈補強證據不成立",
+      "significance": "為什麼有書面記錄還是不成立？法律上「被告自白不得作為唯一證據」的原則在這裡發揮作用。",
+      "connected_characters": [
+        "ko",
+        "shen"
+      ],
+      "connected_events": [
+        "210wan"
+      ]
+    },
+    {
+      "id": "5250wan",
+      "date": "106至111年",
+      "title": "應曉薇收賄5250萬：協會帳戶的秘密",
+      "description": "沈慶京透過捐款給應曉薇掌控的5個協會，共計5250萬元。助理陳佳敏在38分鐘內跑兩家相距幾百公尺的銀行，把協會現金存入應曉薇的貸款帳戶。",
+      "search_query": "應曉薇協會帳戶陳佳敏38分鐘貸款",
+      "significance": "38分鐘、兩家相鄰銀行、先領現後存現，這個金流細節是法院認定洗錢的關鍵證據。",
+      "connected_characters": [
+        "ying",
+        "shen"
+      ],
+      "connected_events": [
+        "wash_money"
+      ]
+    },
+    {
+      "id": "wash_money",
+      "date": "110至111年",
+      "title": "製造金流斷點：提現繳信用卡",
+      "description": "應曉薇將賄款從協會提出現金後，用來繳自己的信用卡費和還貸款，製造金流斷點讓追查困難。",
+      "search_query": "應曉薇洗錢信用卡貸款金流斷點",
+      "significance": "這個操作讓應曉薇同時成立收賄和洗錢兩個罪名。",
+      "connected_characters": [
+        "ying"
+      ],
+      "connected_events": [
+        "5250wan"
+      ]
+    },
+    {
+      "id": "ducweihui_765",
+      "date": "109年5月21日",
+      "title": "都委會765次會議：委員反對無效",
+      "description": "開會前應曉薇當面拜託彭振聲「給我個面子不要駁回」。會中多位委員明確反對，彭振聲無視反對意見，硬是裁示成立專案小組繼續推進。",
+      "search_query": "都委會765次會議彭振聲給面子委員反對",
+      "significance": "這次會議的會議紀錄完整記錄了委員的反對意見，是證明圖利犯意的重要文件。",
+      "connected_characters": [
+        "peng",
+        "ying",
+        "shao"
+      ],
+      "connected_events": [
+        "ducweihui_765_special",
+        "ducweihui_768"
+      ]
+    },
+    {
+      "id": "ducweihui_765_special",
+      "date": "109年6月20日",
+      "title": "專案小組：邵琇珮引導走違法路徑",
+      "description": "邵琇珮因看到林玄理被柯文哲降職的前車之鑑，在專案小組中引導京華城走違法的都更容積獎勵路徑，讓不知情的召集人作出對京華城有利的建議。",
+      "search_query": "邵琇珮專案小組林玄理降職容積獎勵",
+      "significance": "邵琇珮的動機是恐懼，不是貪婪。這個細節讓整個案子的人性面更複雜。",
+      "connected_characters": [
+        "shao",
+        "huang",
+        "peng"
+      ],
+      "connected_events": [
+        "ducweihui_765",
+        "jinghuacheng_permit"
+      ]
+    },
+    {
+      "id": "kp_fund",
+      "date": "112至113年",
+      "title": "木可公司：肖像權金掏空政治獻金",
+      "description": "柯文哲把自己的肖像權授權給木可公司，木可公司再授權給競選總部，然後用「授權金」名義從政治獻金專戶匯出1500萬元給木可公司，再轉給柯文哲個人帳戶。",
+      "search_query": "木可公司肖像權授權金政治獻金侵占",
+      "significance": "這個操作的精妙之處：用合法的商業合約外衣，把捐款人的錢變成柯文哲個人收入。",
+      "connected_characters": [
+        "ko",
+        "lee_wenzong",
+        "lee_wenjuan"
+      ],
+      "connected_events": [
+        "wangwang_fund"
+      ]
+    },
+    {
+      "id": "wangwang_fund",
+      "date": "111至113年",
+      "title": "眾望基金會：公益捐款付競選員工薪水",
+      "description": "柯文哲把競選總部人員掛名為眾望基金會員工，讓基金會的公益捐款支付他們薪水，共挪用827萬元。薪資支出佔基金會當年總支出六成。",
+      "search_query": "眾望基金會薪資競選總部挪用背信",
+      "significance": "民眾以為捐給公益基金會的錢，實際上在養柯文哲的競選團隊。",
+      "connected_characters": [
+        "ko",
+        "lee_wenzong"
+      ],
+      "connected_events": [
+        "kp_fund"
+      ]
+    },
+    {
+      "id": "jinghuacheng_permit",
+      "date": "110年11月1日",
+      "title": "容積獎勵核定：121億的不法利益",
+      "description": "北市府核定京華城20%容積獎勵，鼎越公司因此取得價值121億元的不法容積利益。這是整個案件最終圖利的結果。",
+      "search_query": "京華城容積獎勵核定121億鼎越",
+      "significance": "210萬賄款換來121億利益，這個對比是整個案子最震撼的數字。",
+      "connected_characters": [
+        "shen",
+        "ko",
+        "peng",
+        "huang"
+      ],
+      "connected_events": [
+        "ducweihui_768"
+      ]
+    },
+    {
+      "id": "ducweihui_768",
+      "date": "109年7月30日",
+      "title": "都委會768次會議：法院已判京華城敗訴仍繼續推進",
+      "description": "109年7月16日台北高等行政法院判決京華城敗訴，確認120,284平方公尺樓地板面積只是一次性保障。但彭振聲、黃景茂知道這個判決，仍在14天後的都委會768次會議裡繼續推進容積案。",
+      "search_query": "都委會768次會議行政法院敗訴仍推進",
+      "significance": "法院都判了，他們還繼續做。這個時間點是認定主觀犯意的關鍵證據。",
+      "connected_characters": [
+        "peng",
+        "huang",
+        "shen"
+      ],
+      "connected_events": [
+        "jinghuacheng_permit"
+      ]
+    }
+  ]
+}

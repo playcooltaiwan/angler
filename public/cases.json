@@ -1,0 +1,34 @@
+[
+  {
+    "id": "jinghuacheng",
+    "slug": "jinghuacheng",
+    "name": "京華城案",
+    "documents": [
+      {
+        "id": "jinghuacheng_indictment",
+        "label": "京華城案起訴書",
+        "year_month": "113年9月",
+        "perspective": "檢察官版本",
+        "type": "起訴書",
+        "status": "起訴中",
+        "embeddings": "embeddings.json"
+      }
+    ]
+  },
+  {
+    "id": "xu_chunying",
+    "slug": "xu-chunying",
+    "name": "徐春鶯案",
+    "documents": [
+      {
+        "id": "xu_chunying_indictment",
+        "label": "徐春鶯案起訴書",
+        "year_month": "114年",
+        "perspective": "檢察官版本",
+        "type": "起訴書",
+        "status": "起訴中",
+        "embeddings": "xu_chunying_embeddings.json"
+      }
+    ]
+  }
+]

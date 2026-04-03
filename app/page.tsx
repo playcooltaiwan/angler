@@ -1,65 +1,73 @@
-import Image from "next/image";
+import Link from 'next/link'
+import casesData from '../public/cases.json'
+import eventsData from '../public/events.json'
 
-export default function Home() {
+export default function Page() {
+  const casesWithCount = casesData.map(c => ({
+    ...c,
+    eventCount: eventsData.filter(e => e.case === c.name).length,
+  }))
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main style={{
+      minHeight: '100vh',
+      background: '#0a0a0a',
+      color: '#e8e0d0',
+      fontFamily: '"Noto Serif TC", Georgia, serif',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '40px',
+    }}>
+      <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+        <h1 style={{ fontSize: '28px', fontWeight: '700', letterSpacing: '0.15em', color: '#fff', margin: '0 0 12px' }}>
+          ANGLER
+        </h1>
+        <p style={{ fontSize: '13px', color: '#333', letterSpacing: '0.2em', margin: 0 }}>
+          讓原始文件說話
+        </p>
+      </div>
+
+      <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        {casesWithCount.map(c => (
+          <Link
+            key={c.id}
+            href={`/${c.slug}`}
+            style={{ textDecoration: 'none' }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+            <div className="case-card" style={{
+              width: '280px',
+              padding: '32px 28px',
+              background: '#0c0c0c',
+              border: '1px solid',
+              cursor: 'pointer',
+            }}>
+              <div style={{ fontSize: '11px', color: '#333', letterSpacing: '0.3em', marginBottom: '16px' }}>
+                {c.documents[0].status}
+              </div>
+              <h2 style={{ fontSize: '20px', fontWeight: '700', color: '#fff', margin: '0 0 20px', letterSpacing: '0.06em' }}>
+                {c.name}
+              </h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {c.documents.map(doc => (
+                  <div key={doc.id} style={{
+                    fontSize: '12px', padding: '8px 10px',
+                    border: '1px solid #1e1e1e',
+                    color: '#666',
+                    letterSpacing: '0.04em',
+                  }}>
+                    {doc.label} · {doc.year_month}
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginTop: '24px', fontSize: '11px', color: '#2a2a2a', letterSpacing: '0.1em' }}>
+                {c.eventCount} 個事件
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </main>
+  )
 }

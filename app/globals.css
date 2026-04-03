@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.case-card {
+  border-color: #1a1a1a;
+  transition: border-color 0.15s;
+}
+
+.case-card:hover {
+  border-color: #333;
+}
