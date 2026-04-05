@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 import casesData from '../../public/cases.json'
 import eventsData from '../../public/events.json'
 import nodesData from '../../public/nodes.json'
@@ -10,6 +11,12 @@ interface Props {
 
 export function generateStaticParams() {
   return casesData.map(c => ({ caseId: c.slug }))
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { caseId } = await params
+  const caseInfo = casesData.find(c => c.slug === caseId)
+  return { title: caseInfo?.name ?? caseId }
 }
 
 export default async function CasePage({ params }: Props) {

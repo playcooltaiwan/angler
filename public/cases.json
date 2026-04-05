@@ -10,8 +10,7 @@
         "year_month": "113年9月",
         "perspective": "檢察官版本",
         "type": "起訴書",
-        "status": "起訴中",
-        "embeddings": "embeddings.json"
+        "status": "起訴中"
       }
     ]
   },
@@ -26,8 +25,7 @@
         "year_month": "114年",
         "perspective": "檢察官版本",
         "type": "起訴書",
-        "status": "起訴中",
-        "embeddings": "xu_chunying_embeddings.json"
+        "status": "起訴中"
       }
     ]
   }

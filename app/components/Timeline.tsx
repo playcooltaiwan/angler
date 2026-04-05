@@ -33,7 +33,6 @@ interface Document {
   perspective: string
   type: string
   status: string
-  embeddings: string
 }
 
 interface Character {
